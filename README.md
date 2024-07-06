@@ -23,19 +23,19 @@ Bienvenue sur le dépôt GitHub de PhyRank ! PhyRank est une application web int
 
 ```
 PhyRank/
-├── public/
-│   ├── index.html
+├── back/
+│   ├── script.js
 │   └── ...
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── tailwind.config.js
-├── package.json
-└── README.md
+├── front/
+│   └──src/
+│       ├── assets/
+│       ├── components/
+│       ├── pages/
+│       ├── index.js
+│       └── ...
+│   ├── tailwind.config.js
+│   ├── package.json
+│   └── README.md
 ```
 
 ## Installation
