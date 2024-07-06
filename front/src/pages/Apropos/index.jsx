@@ -21,7 +21,7 @@ const Styledh2 = styled.h2`
 
 const StyledBody = styled.div`
     ${tw`
-        mr-40 ml-40 mt-20 flex flex-col gap-10
+        lg:ml-40 lg:mr-40 lg:mt-20 md:ml-20 md:mr-20 md:mt-10 ml-8 mr-8 mt-4 flex flex-col gap-10
     `}
 `
 

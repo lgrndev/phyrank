@@ -4,12 +4,12 @@ import phi from '../../assets/phi.png'
 
 function Header () {
     return (
-        <div className="flex flex-row justify-between p-4 items-center">
+        <div className="flex md:flex-row justify-between p-4 items-center flex-col">
             <div className="flex flex-row gap-4 items-center">
                 <img src={phi} alt="logo phi" className="h-16"/>
             <div className="text-2xl font-bold text-white">PhyRank</div>
             </div>
-            <div className="flex flex-row gap-8 items-center">
+            <div className="flex sm:flex-row gap-8 items-center flex-col">
                 <div className="border border-zinc-700 rounded-full gap-8 bg-zinc-800 flex flex-row pr-10 pl-10 text-sm nav-container">
                     <Link to="/" className="nav-link block p-2">Accueil</Link>
                     <Link to="/exercices" className="nav-link block p-2">Exercices</Link>
