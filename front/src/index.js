@@ -9,6 +9,7 @@ import { createGlobalStyle } from 'styled-components';
 import grille from './assets/grille.jpg';
 import Footer from './components/Footer';
 import Classement from './pages/Classement'
+import Apropos from './pages/Apropos'
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -46,6 +47,7 @@ ReactDOM.render(
                 <Route path="/exercices" element={<Exercices />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/classement' element={<Classement />} />
+                <Route path='/apropos' element={<Apropos />} />
             </Routes>
             <Footer />
         </Router>
