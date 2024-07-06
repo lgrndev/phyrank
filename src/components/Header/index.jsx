@@ -1,0 +1,24 @@
+import { Link } from "react-router-dom";
+import '../../style/BasicStyle.css';
+import phi from '../../assets/phi.png'
+
+function Header () {
+    return (
+        <div className="flex flex-row justify-between p-4 items-center">
+            <div className="flex flex-row gap-4 items-center">
+                <img src={phi} alt="logo phi" className="h-16"/>
+            <div className="text-2xl font-bold text-white">PhyRank</div>
+            </div>
+            <div className="flex flex-row gap-8 items-center">
+                <div className="border border-zinc-700 rounded-full gap-8 bg-zinc-800 flex flex-row pr-10 pl-10 text-sm nav-container">
+                    <Link to="/" className="nav-link block p-2">Accueil</Link>
+                    <Link to="/exercices" className="nav-link block p-2">Exercices</Link>
+                    <Link to="/apropos" className="nav-link block p-2">A Propos</Link>
+                </div>
+                <Link className="border border-zinc-700 p-3 pl-6 pr-6 rounded-full text-white shadow bg-blue-600 hover:-translate-y-1 transition-all active:translate-y-1 cursor-pointer hover:bg-blue-500 active:bg-blue-700" to="/login">Se connecter</Link>
+            </div>
+        </div>
+    );
+}
+
+export default Header;
