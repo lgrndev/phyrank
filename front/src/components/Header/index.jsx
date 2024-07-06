@@ -10,7 +10,7 @@ function Header () {
             <div className="text-2xl font-bold text-white">PhyRank</div>
             </div>
             <div className="flex sm:flex-row gap-8 items-center flex-col">
-                <div className="border border-zinc-700 rounded-full gap-8 bg-zinc-800 flex flex-row pr-10 pl-10 text-sm nav-container">
+                <div className="border border-zinc-700 rounded-full sm:gap-8 gap-4 bg-zinc-800 flex flex-row pr-10 pl-10 text-sm nav-container">
                     <Link to="/" className="nav-link block p-2">Accueil</Link>
                     <Link to="/exercices" className="nav-link block p-2">Exercices</Link>
                     <Link to="/apropos" className="nav-link block p-2">A Propos</Link>

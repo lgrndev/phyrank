@@ -35,7 +35,7 @@ function Home () {
 
             <div className='flex flex-col sm:flex-row p-8 gap-8 sm:gap-0'>
                 <div className='w-auto h-40 sm:w-96 sm:h-96 border rounded-xl border-zinc-700 p-4 flex flex-col justify-center items-center relative'>
-                    <div className='w-3 h-3 bg-red-500 rounded-full absolute top-4 right-4 animate-ping duration-1000'></div>
+                    <div className='w-1 h-1 sm:w-3 sm:h-3 bg-red-500 rounded-full absolute sm:top-4 sm:right-4 right-2 top-2 animate-ping duration-1000'></div>
                     <div className='text-2xl font-bold text-center'>Nombre de connectés</div>
                     <div className='text-sm text-zinc-600'>(en direct)</div>
                     <div className='poppins-bold text-3xl text-blue-500 mt-10'>20</div>
