@@ -13,7 +13,7 @@ function Home () {
             </Helmet>
             <div className="p-8 text-center text-5xl poppins-bold lg:text-left">Le défi physique ultime avec classement intégré !</div>
             <div className='flex lg:flex-row justify-between flex-col items-center lg:items-start'>
-            <p className='text-zinc-400 w-2/3 p-8'>
+            <p className='text-zinc-400 w-2/3 sm:p-8 pt-8 pb-8'>
   👋 Bienvenue sur <span className='text-white'>Phyrank</span> 🚀, votre destination incontournable pour perfectionner vos compétences en physique tout en vous mesurant aux autres passionnés. <br/>Explorez nos exercices stimulants, grimpez dans le classement 🔝, et laissez-vous inspirer par la science qui nous entoure 🌌. Prêt à relever le défi ? Rejoignez-nous dès maintenant sur <span className='text-white'>Phyrank</span> 🌟 !
 </p>
 
@@ -33,20 +33,20 @@ function Home () {
             <div className='p-8 poppins-semibold text-xl'>Quelques statistiques</div>
             <div className='pl-8 pr-8 text-zinc-400'>Voici une liste des quelques statistiques du site</div>
 
-            <div className='flex flex-row p-8 '>
-                <div className='w-96 h-96 border rounded-xl border-zinc-700 p-4 flex flex-col justify-center items-center relative'>
+            <div className='flex flex-col sm:flex-row p-8 gap-8 sm:gap-0'>
+                <div className='w-auto h-40 sm:w-96 sm:h-96 border rounded-xl border-zinc-700 p-4 flex flex-col justify-center items-center relative'>
                     <div className='w-3 h-3 bg-red-500 rounded-full absolute top-4 right-4 animate-ping duration-1000'></div>
                     <div className='text-2xl font-bold text-center'>Nombre de connectés</div>
                     <div className='text-sm text-zinc-600'>(en direct)</div>
                     <div className='poppins-bold text-3xl text-blue-500 mt-10'>20</div>
                 </div>
-                <div className='flex flex-col justify-between ml-20 w-4/6'>
+                <div className='flex flex-col sm:justify-between gap-8 sm:gap-0 sm:ml-20 sm:w-4/6 w-auto'>
                 <div className='w-auto h-40 border rounded-xl border-zinc-700 p-4 flex flex-col justify-center items-center'>
-                    <div className='text-2xl font-bold text-center sm:text-left'>Exercices résolus</div>
+                    <div className='text-2xl font-bold text-center'>Exercices résolus</div>
                     <div className='poppins-bold text-3xl text-blue-500 mt-10'>2520</div>
                 </div>
                 <div className='w-auto h-40 border rounded-xl border-zinc-700 p-4 flex flex-col justify-center items-center'>
-                    <div className='text-2xl font-bold text-center sm:text-left'>Utilisateurs inscrits</div>
+                    <div className='text-2xl font-bold text-center'>Utilisateurs inscrits</div>
                     <div className='poppins-bold text-3xl text-blue-500 mt-10'>78</div>
                     </div>
                 </div>

@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
         color: rgb(255, 255, 255);
         position: relative;
         z-index: 0;
+        align-items: center;
     }
     
     body::before {
