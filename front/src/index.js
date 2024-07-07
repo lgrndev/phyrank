@@ -10,6 +10,7 @@ import grille from './assets/grille.jpg';
 import Footer from './components/Footer';
 import Classement from './pages/Classement'
 import Apropos from './pages/Apropos'
+import Error from './pages/Error';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -49,6 +50,7 @@ ReactDOM.render(
                 <Route path='/login' element={<Login />} />
                 <Route path='/classement' element={<Classement />} />
                 <Route path='/apropos' element={<Apropos />} />
+                <Route path='/*' element={<Error />} />
             </Routes>
             <Footer />
         </Router>

@@ -1,59 +1,39 @@
-import '../../style/BasicStyle.css'
+import '../../style/BasicStyle.css';
+import { classement } from '../../data/Classement.js';
 
+function Classement() {
+    // Trier le classement par XP décroissant
+    const sortedClassement = [...classement].sort((a, b) => b.xp - a.xp);
 
-import styled from 'styled-components'
-import tw from 'twin.macro'
-
-
-const StyledClassement = styled.div`
-    ${tw`
-        text-xl p-2 flex flex-row justify-between w-full border border-zinc-800 rounded-xl
-    `}
-`
-
-const StyledXP = styled.div`
-    ${tw`
-        text-blue-500 
-    `}
-`
-
-function Classement () {
     return (
-        <div className="flex justify-center">
-            <div className=" p-2 rounded-md w-screen ml-40 mr-40 mt-16 flex justify-center flex-col items-center">
-                <div className="text-2xl poppins-bold mb-16 mt-4">Classement</div>
-                <StyledClassement className='bg-yellow-300 text-black'>
-  <div>1er : Lucas</div>
-  <StyledXP>XP : 240</StyledXP>
-</StyledClassement>
-<StyledClassement className='bg-zinc-300 text-black'>
-  <div>2ème : Clara</div>
-  <StyledXP>XP : 200</StyledXP>
-</StyledClassement>
-<StyledClassement className='bg-amber-600 text-black'>
-  <div>3ème : Hugo</div>
-  <StyledXP>XP : 180</StyledXP>
-</StyledClassement>
-<StyledClassement>
-  <div>4ème : Emma</div>
-  <StyledXP>XP : 160</StyledXP>
-</StyledClassement>
-<StyledClassement>
-  <div>5ème : Léa</div>
-  <StyledXP>XP : 140</StyledXP>
-</StyledClassement>
-<StyledClassement>
-  <div>6ème : Maxime</div>
-  <StyledXP>XP : 120</StyledXP>
-</StyledClassement>
-<StyledClassement>
-  <div>7ème : Chloé</div>
-  <StyledXP>XP : 100</StyledXP>
-</StyledClassement>
+        <div className="">
+            <div className="flex flex-col items-center justify-center w-screen">
+                <h1 className="poppins-bold text-3xl m-8">Leaderboard</h1>
+                <div className=" flex flex-col gap-4">
+                    {sortedClassement && sortedClassement.length > 0 ? (
+                        sortedClassement.map((user, index) => (
+                            <div key={index} className="">
+                                <div className="gap-16 flex flex-row justify-between items-center w-auto">
 
+                                  <div className='text-xl poppins-bold'>{index+1} </div>
+                                  <div className='flex flex-row gap-10 items-center'> 
+                                  <img src={user.picture} alt={`${user.pseudo}'s avatar`} className=" size-12 invert" />
+                                  <div className='flex flex-row gap-10 bg-blue-700 pl-3 pr-3  rounded-lg w-48 justify-between'> 
+                                  <div className="">{user.pseudo}</div>
+                                  <div className="poppins-bold text-lg">{user.xp}</div>
+                                  </div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        <div>Loading...</div>
+                    )}
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Classement
+export default Classement;

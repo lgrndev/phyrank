@@ -5,15 +5,15 @@ import fleche from '../../assets/fleche.png'
 
 function Home () {
     return (
-        <div className=' lg:ml-40 lg:mr-40 lg:mt-20 md:ml-20 md:mr-20 md:mt-10 ml-8 mr-8 mt-4'>
+        <div className=' lg:ml-40 lg:mr-40 lg:mt-20 md:ml-20 md:mr-20 md:mt-10 ml-4 mr-4 mt-4'>
             <Helmet>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
             </Helmet>
-            <div className="p-8 text-center text-5xl poppins-bold lg:text-left">Le défi physique ultime avec classement intégré !</div>
+            <div className="p-8 text-center sm:text-5xl poppins-bold lg:text-left text-3xl lg:w-2/3">Le défi physique ultime avec classement intégré !</div>
             <div className='flex lg:flex-row justify-between flex-col items-center lg:items-start'>
-            <p className='text-zinc-400 w-2/3 sm:p-8 pt-8 pb-8'>
+            <p className='text-zinc-400 sm:w-2/3 p-4 sm:p-8 pt-8 pb-8'>
   👋 Bienvenue sur <span className='text-white'>Phyrank</span> 🚀, votre destination incontournable pour perfectionner vos compétences en physique tout en vous mesurant aux autres passionnés. <br/>Explorez nos exercices stimulants, grimpez dans le classement 🔝, et laissez-vous inspirer par la science qui nous entoure 🌌. Prêt à relever le défi ? Rejoignez-nous dès maintenant sur <span className='text-white'>Phyrank</span> 🌟 !
 </p>
 

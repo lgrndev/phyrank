@@ -1,7 +1,8 @@
+
+
 function Exercices () {
     return (
         <div>
-            Coucou
         </div>
     )
 }
