@@ -1,4 +1,16 @@
-# PhyRank
+<div align="center">
+  <h1 align="center">PhyRank</h1>
+
+### L'application pour la physique.
+
+![NodeJS](https://img.shields.io/badge/node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Github stars](https://img.shields.io/github/stars/lgrndev/phyrank?style=for-the-badge)
+
+</div>
+
+## A propos
 
 Bienvenue sur le dépôt GitHub de PhyRank ! PhyRank est une application web interactive pour les étudiants en physique, couvrant les niveaux du baccalauréat jusqu'à Bac+5. Cette plateforme permet aux utilisateurs de s'entraîner avec des exercices de physique, de suivre leur progression et de se comparer aux autres grâce à un système de classement.
 
